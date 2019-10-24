@@ -1,3 +1,12 @@
+---
+title: Python刻意练习---Task04：字符串与序列（1day）
+date: 2019-10-24 23:02:26
+categories:
+ - 刻意练习
+tags:
+ - python
+---
+
 ### 字符串
 
 #### 字符串的相关方法
