@@ -116,22 +116,99 @@ list(iterable) -> new list initialized from iterable's item
 ```
 
 ##### `tuple()`方法
+```
+tuple(iterable=(), /)
+
+Built-in immutable sequence.
+If no argument is given, the constructor returns an empty tuple.
+If iterable is specified the tuple is initialized from iterable's items.
+If the argument is a tuple, the return value is the same object.
+```
 
 ##### `str()`方法
+```
+str(object='') -> str
+str(bytes_or_buffer[, encoding[, errors]]) -> str
+
+Create a new string object from the given object. If encoding or
+errors is specified, then the object must expose a data buffer
+that will be decoded using the given encoding and error handler.
+Otherwise, returns the result of object.__str__() (if defined)
+or repr(object).
+encoding defaults to sys.getdefaultencoding().
+errors defaults to 'strict'.
+ ```
 
 ##### `len()`方法
+```
+len(obj, /)
+
+Return the number of items in a container.
+```
 
 ##### `max()`方法
+```
+max(...)
+max(iterable, *[, default=obj, key=func]) -> value
+max(arg1, arg2, *args, *[, key=func]) -> value
+    
+With a single iterable argument, return its biggest item. The
+default keyword-only argument specifies an object to return if
+the provided iterable is empty.
+With two or more arguments, return the largest argument.
+```
 
-##### `max()`方法
+##### `min()`方法
+```
+min(...)
+min(iterable, *[, default=obj, key=func]) -> value
+min(arg1, arg2, *args, *[, key=func]) -> value
+    
+With a single iterable argument, return its smallest item. The
+default keyword-only argument specifies an object to return if
+the provided iterable is empty.
+With two or more arguments, return the smallest argument.
+```
 
 ##### `sum()`方法
+```
+sum(iterable, start=0, /)
+Return the sum of a 'start' value (default: 0) plus an iterable of numbers
+    
+When the iterable is empty, return the start value.
+This function is intended specifically for use with numeric values and may
+reject non-numeric types.
+```
 
 ##### `sorted()`方法
+```
+sorted(iterable, /, *, key=None, reverse=False)
+Return a new list containing all items from the iterable in ascending order.
+    
+A custom key function can be supplied to customize the sort order, and the
+reverse flag can be set to request the result in descending order.
+```
 
 ##### `reversed()`方法
+```
+reversed(sequence, /)
+   
+Return a reverse iterator over the values of the given sequence.
+```
 
 ##### `enumerate()`方法
+```
+enumerate(iterable, start=0)
+   
+Return an enumerate object.
+ ```
 
 ##### `zip()`方法
-
+```
+zip(iter1 [,iter2 [...]]) --> zip object
+   
+Return a zip object whose .__next__() method returns a tuple where
+the i-th element comes from the i-th iterable argument.  The .__next__()
+method continues until the shortest iterable in the argument sequence
+is exhausted and then it raises StopIteration.
+```
