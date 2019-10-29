@@ -106,3 +106,100 @@ Argument offset is a byte count. Optional argument whence defaults to
 def tell(self, )
 tell() -> current file position, an integer (may be a long integer).
 ```
+
+## OS模块
+
+模块是一个包含所有你定义的函数和变量的文件，其后缀名为.py。模块可以被别的程序引入，以使用该模块中的函数等功能。
+
+### OS模块中关于文件、目录常用的函数使用方法
+- getcwd()
+
+```
+def getcwd()
+getcwd() -> path
+
+Return a string representing the current working directory.
+```
+- chdir()
+
+```
+def chdir(path)
+Change the current working directory to the specified path.
+```
+- listdir()
+
+```
+listdir(path) -> list_of_strings
+
+Return a list containing the names of the entries in the directory.
+
+    path: path of directory to list  
+The list is in arbitrary order. It does not include the special entries '.' and '..' even if they are present in the directory.
+```
+- mkdir(), makedirs()
+
+```
+def mkdir(path, mode)
+Create a directory.
+```
+
+```
+def makedirs(name, mode=0777)
+Super-mkdir; create a leaf directory and all intermediate ones. Works like mkdir, except that any intermediate path segment (not just the rightmost) will be created if it does not exist. This is recursive.
+```
+- remove()
+
+```
+def remove(path)
+Remove a file (same as unlink(path)).
+```
+- rmdir(), removedirs()
+
+```
+def rmdir(path)
+Remove a directory.
+```
+
+```
+def removedirs(name)
+Super-rmdir; remove a leaf directory and all empty intermediate ones. Works like rmdir except that, if the leaf directory is successfully removed, directories corresponding to rightmost path segments will be pruned away until either the whole path is consumed or an error occurs. Errors during this latter phase are ignored -- they generally mean that a directory was not empty.
+```
+- rename()
+
+```
+def rename(old, new)
+Rename a file or directory.
+```
+- system()
+
+```
+def system(command)
+system(command) -> exit_status
+
+Execute the command (a string) in a subshell.
+```
+### 支持路径操作中常用的一些定义，支持所有平台
+
+- os.curdir
+
+表示当前目录，相当于`'.'`
+
+- os.pardir
+
+表示上一级目录，相当于`'..'`
+
+- os.sep
+
+输出系统特定的路径分隔符，相当于Windows中的`'\\'`，Linux中的`'/'`
+
+- os.linesep
+
+输出系统中使用的行终止符，相当于Windows中的`'\r\n'`，Linux中的`'\n'`
+
+- os.name
+
+表示当前使用的操作系统
+
+## os.path模块
+
+### 
