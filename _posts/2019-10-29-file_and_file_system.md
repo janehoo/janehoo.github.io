@@ -202,4 +202,80 @@ Execute the command (a string) in a subshell.
 
 ## os.path模块
 
-### 
+### 关于路径的常用函数
+- basename()
+
+```
+def basename(p)
+Returns the final component of a pathname
+```
+- dirname()
+
+```
+def dirname(p)
+Returns the directory component of a pathname
+```
+- join()
+
+```
+def join(a, *p)
+Join two or more pathname components, inserting '/' as needed. If any component is an absolute path, all previous path components will be discarded. An empty last part will result in a path that ends with a separator.
+```
+- split(), splitext()
+
+```
+def split(p)
+Split a pathname. Returns tuple "(head, tail)" where "tail" is everything after the final slash. Either part may be empty.
+```
+
+```
+def spsplitextlit(p)
+Split a path in root and extension. The extension is everything starting at the last dot in the last pathname component; the root is everything before that.It is always true that root + ext == p.
+```
+- getsize()
+
+```
+def getsize(filename)
+Return the size of a file, reported by os.stat().
+```
+- getatime()
+
+```
+def getatime(filename)
+Return the last access time of a file, reported by os.stat()
+```
+- getctime()
+
+```
+def getctime(filename)
+Return the metadata change time of a file, reported by os.stat()
+```
+- getmtime()
+
+```
+def getmtime(filename)
+Return the last modification time of a file, reported by os.stat().
+```
+### 关于路径的一些判断函数
+
+- exists()
+
+判断指定路径（目录或文件）是否存在。
+- isabs()
+
+判断指定路径是否为绝对路径。
+- isdir()
+
+判断指定路径是否为存在，且为目录。
+- isfile()
+
+判断指定路径是否存在，且为文件。
+- islink()
+
+判断指定路径是否存在，且为符号链接。
+- ismount()
+
+判断指定路径是都存在，且为挂载点
+- samefile()
+
+判断两个路径是否指向同一文件
