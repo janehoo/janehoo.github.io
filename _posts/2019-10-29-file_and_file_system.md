@@ -50,6 +50,7 @@ Character Meaning
 ```
 ### 文件对象方法
 - close()
+
 ```
 def close(self, )
 close() -> None or (perhaps) an integer. Close the file.
@@ -57,6 +58,7 @@ close() -> None or (perhaps) an integer. Close the file.
 Sets data attribute .closed to True. A closed file cannot be used for further I/O operations. close() may be called more than once without error. Some kinds of file objects (for example, opened by popen()) may return an exit status upon closing.
 ```
 - read()
+
 ```
 def read(self, size)
 read([size]) -> read at most size bytes, returned as a string.
@@ -64,6 +66,7 @@ read([size]) -> read at most size bytes, returned as a string.
 If the size argument is negative or omitted, read until EOF is reached. Notice that when in non-blocking mode, less data than what was requested may be returned, even if no size parameter was given.
 ```
 - readline()
+
 ```
 def readline(self, size)
 readline([size]) -> next line from the file, as a string.
@@ -71,6 +74,7 @@ readline([size]) -> next line from the file, as a string.
 Retain newline. A non-negative size argument limits the maximum number of bytes to return (an incomplete line may be returned then). Return an empty string at EOF.
 ```
 - write()
+
 ```
 def write(self, str)
 write(str) -> None. Write string str to file.
@@ -78,6 +82,7 @@ write(str) -> None. Write string str to file.
 Note that due to buffering, flush() or close() may be needed before the file on disk reflects the data written.
 ```
 - writelines()
+
 ```
 def writelines(self, sequence_of_strings)
 writelines(sequence_of_strings) -> None. Write the strings to the file.
@@ -85,6 +90,7 @@ writelines(sequence_of_strings) -> None. Write the strings to the file.
 Note that newlines are not added. The sequence can be any iterable object producing strings. This is equivalent to calling write() for each string.
 ```
 - seek()
+
 ```
 def seek(self, offset, whence)
 seek(offset[, whence]) -> None. Move to new file position.
@@ -95,6 +101,7 @@ Argument offset is a byte count. Optional argument whence defaults to
 (move relative to current position, positive or negative), and 2 (move relative to end of file, usually negative, although many platforms allow seeking beyond the end of a file). If the file is opened in text mode, only offsets returned by tell() are legal. Use of other offsets causes undefined behavior. Note that not all file objects are seekable.
 ```
 - tell()
+
 ```
 def tell(self, )
 tell() -> current file position, an integer (may be a long integer).
