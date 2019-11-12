@@ -88,6 +88,22 @@ tags:
 
 ## NumPy函数库基础
 
+- 将NumPy函数库中所有模块引入当前命名空间
 
+`>>> from numpy import *`
 
- 
+- 随机生成一个4X4的array
+
+`>>> random.rand(4, 4)`
+
+- array转换为matrix
+
+`>>> randMat = mat(random.rand(4, 4))`
+
+- matrix求逆
+
+`>>> randMat.I`
+
+- 生成4X4的单位矩阵
+
+`>>> eye(4)`
