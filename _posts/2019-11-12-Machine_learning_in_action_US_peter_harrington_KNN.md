@@ -58,6 +58,7 @@ def createDataSet():
 
 
 def classify0(inX, group, labels, k):
+    '分类算法：k-近邻算法'
     # 距离计算
     dataSetSize = group.shape[0]
     diffMat = tile(inX, (dataSetSize, 1)) - group
@@ -92,16 +93,16 @@ array([[1. , 1.1],
 ```
 
 ## 练习中遇到的问题
-1. 错误提示：`ModuleNotFoundError: No module named 'numpy'`
+- 错误提示：`ModuleNotFoundError: No module named 'numpy'`
 
 >解决办法：安装`numpy`
 >
 >在shell中执行：`python3 -m pip install numpy`
 
-2. numpy.tile函数
+- numpy.tile函数
 
 >[点击查看：python numpy-tile函数](https://www.jianshu.com/p/4b74a367833c)
 
-3. 错误提示：`AttributeError: 'dict' object has no attribute 'iteritems'`
+- 错误提示：`AttributeError: 'dict' object has no attribute 'iteritems'`
 
 >原因：python3中`dict`的`iteritems`方法被`items`替代
