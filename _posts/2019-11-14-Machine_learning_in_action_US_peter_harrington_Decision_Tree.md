@@ -31,6 +31,5 @@ return 分支节点
 - 信息增益：英文：information gain，在划分数据集之前之后信息发生的变化称为信息增益。**获得信息增益最高的特征就是最好的选择。**
 - 香农熵/熵：英文：entropy，集合信息的度量方式称为香农熵或者简称为**熵**。即，**信息的期望值。**
 - 信息的定义：
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= l\left ( x_{i} \right )=- \log _{2} p\left ( x_{i} \right )" style="border:none;">
 
