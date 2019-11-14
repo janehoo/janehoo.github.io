@@ -66,7 +66,7 @@ def calcShannonEnt(dataSet):
 0.9709505944546686
  ```
 
- #### 划分数据集
+#### 划分数据集
  ```python
 def splitDataSet(dataSet, axis, value):
     '划分数据集：返回数据集中数据第axis元素为value的新数据集,新数据集中不包含原数据集中第axis元素'
