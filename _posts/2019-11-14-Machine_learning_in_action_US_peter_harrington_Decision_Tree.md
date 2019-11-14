@@ -32,4 +32,5 @@ return 分支节点
 - 香农熵/熵：英文：entropy，集合信息的度量方式称为香农熵或者简称为**熵**。即，**信息的期望值。**
 - 信息的定义：
 <img src="http://chart.googleapis.com/chart?cht=tx&chl= l\left ( x_{i} \right )=- \log _{2} p\left ( x_{i} \right )" style="border:none;">
-
+- 熵的计算：
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=H=-\sum_{i=1}^{n} \log _{2}p\left ( x_{i} \right )" style="border:none;">
