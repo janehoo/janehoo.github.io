@@ -34,8 +34,7 @@ return 分支节点
 <img src="http://chart.googleapis.com/chart?cht=tx&chl= l\left ( x_{i} \right )=- \log _{2} p\left ( x_{i} \right )" style="border:none;">
 5. 熵的计算：
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=H=-\sum_{i=1}^{n} \log _{2}p\left ( x_{i} \right )" style="border:none;">
-
-其中，n是分类的数目。
+——其中，n是分类的数目。
 
 #### 计算给定数据集的香农熵
  ```python
@@ -108,6 +107,17 @@ def chooseBestFeatureToSplit(dataSet):
             bestFeature = i
     return bestFeature
 ```
+执行结果：
+```python
+>>> imp.reload(trees)
+<module 'trees' from '/Users/janehoo/work/python/trees.py'>
+>>> myDat, labels = trees.createDataSet()
+>>> trees.chooseBestFeatureToSplit(myDat)
+0
+```
+结果显示，第0个特征值是最佳的用于划分数据集的特征。
+
+
 #### 构建决策树
 
 
